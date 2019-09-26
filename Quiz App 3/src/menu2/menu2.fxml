@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu2.ControllerMenu2">
+   <children>
+      <VBox alignment="CENTER" layoutX="15.0" layoutY="15.0" prefHeight="357.0" prefWidth="330.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="272.0" text="Kategorie Auswahl">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Button fx:id="categoryComputer" mnemonicParsing="false" onAction="#categroyComputerButton_Clicked" prefWidth="250.0" text="Computer" />
+                  <Button fx:id="categroyProLan" mnemonicParsing="false" onAction="#categroyProLanButton_Clicked" prefWidth="250.0" text="Programmiersprachen" />
+                  <Button fx:id="categoryJava" mnemonicParsing="false" onAction="#categoryJavaButton_Clicked" prefWidth="250.0" text="Java" />
+                  <Button fx:id="categoryGermany" mnemonicParsing="false" onAction="#categoryGermanyButton_Clicked" prefWidth="250.0" text="Deutschland" />
+                  <Button fx:id="categoryAnimal" mnemonicParsing="false" onAction="#categoryAnimalButton_Clicked" prefWidth="250.0" text="Tiere" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="271.0" spacing="5.0">
+               <children>
+                  <Label text="Deine Auswahl:" />
+                  <Label fx:id="categoryLabel" prefHeight="17.0" prefWidth="274.0" />
+               </children>
+            </VBox>
+            <HBox fx:id="statusHBox" alignment="CENTER" prefHeight="36.0" prefWidth="330.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#okButton_Clicked" prefWidth="80.0" text="OK" />
+                  <Button mnemonicParsing="false" onAction="#cancelButton_Clicked" prefWidth="80.0" text="Abbrechen" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="411.0" prefHeight="25.0" prefWidth="356.0" spacing="20.0">
+         <children>
+            <Label text="DB Status" />
+            <Circle fx:id="dbStatusLight" fill="#ff3c1f" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
